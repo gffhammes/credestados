@@ -1,6 +1,6 @@
 .navbar {
   background-color: #fff;
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -9,6 +9,12 @@
   z-index: 999;
   padding: 25px 0;
   width: 100%;
+  transition: 0.2s ease-out;
+
+  &.shrink {
+    height: 60px;
+    padding: 10px 0;
+  }
 
   .navbar-container {
     display: flex;
@@ -17,7 +23,6 @@
     height: 100%;
     width: 100%;
     max-width: 1500px;
-    margin: 0 40px;
 
     .navbar-logo {
       cursor: pointer;
@@ -83,13 +88,8 @@
   }
 }
 
-
 @media screen and (max-width: 960px) {
- 
-  
-  
-
-  .navbar-container {
+   .navbar-container {
     .menu-icon {
       display: block !important;
       font-size: 1.5rem;

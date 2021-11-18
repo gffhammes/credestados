@@ -6,7 +6,6 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--green'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-
 export const Button = ({
   children,
   type,

@@ -1,16 +1,16 @@
 import './App.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import HeroSection from './components/HeroSection/HeroSection';
+import QuemSomos from './components/QuemSomos/QuemSomos';
+import Diferenciais from './components/Diferenciais/Diferenciais';
 
 function App() { 
   return (
     <>
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route path="/" exact />
-        </Routes>        
-      </Router>      
+      <Navbar/>
+      <HeroSection/> 
+      <QuemSomos/>
+      <Diferenciais/>
     </>
   );
 }

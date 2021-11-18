@@ -1,17 +1,46 @@
 :root {
   --primary: #FF6600;  
+  --dark-primary: #d15400;  
   --text-color: #444;
   --green: #08C122;
   --light-grey: #F4F4F4;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
-  background-color: var(--light-grey);
-  height: 200vh;
 }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+section.padding--default {
+  padding: 50px 0 50px 0;
+}
+
+section.bg--light-grey {
+  background-color: var(--light-grey);
+}
+
+
 
 .shadow-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

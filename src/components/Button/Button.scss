@@ -1,3 +1,7 @@
+.btn-mobile {
+  width: 100%;  
+}
+
 .btn {
   padding: .5rem 1rem;
   border-radius: .2rem;
@@ -5,11 +9,16 @@
   border: none;
   cursor: pointer;
   transition: all .3s ease-out;
+  width: 100%;
 }
 
 .btn--primary {
   background-color: var(--primary);
   color: #fff; 
+
+  &:hover {
+    background-color: var(--dark-primary);
+  }
 }
 
 .btn--outline {
@@ -34,7 +43,7 @@
 }
 
 .btn--large {
-  font-size: 1.5rem;  
+  font-size: 1.25rem;  
   padding: .75rem 1.5rem;
-  border-radius: .5rem;
+  border-radius: .3rem;
 }
