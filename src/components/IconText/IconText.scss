@@ -1,0 +1,13 @@
+.icon-text { 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  img {
+    height: 3rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: fit-content;
+  }
+}

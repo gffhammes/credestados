@@ -2,16 +2,15 @@ import React from 'react';
 import './IconText.scss';
 
 export const IconText = ({
-  icon,
+  iconPath,
   title,
   text
-}) => {
-  const checkAlignment = ALIGNMENTS.includes(alignment) ? alignment : ALIGNMENTS[0];
-
+}) => {  
   return (
-    <div className={`title-container ${checkAlignment}`}>
-      <span>{subTitle}</span>
-      <h2>{title}</h2>
+    <div className='icon-text'>
+      <img src={process.env.PUBLIC_URL + iconPath} alt={title} />
+      <h3>{title}</h3>
+      <p>{text}</p>
     </div>
   )
 };

@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  .card-simulacao-emprestimo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding: 1rem;
+
+    .card-header {
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+
+    .card-body {
+      margin: 1rem 0;
+      width: 100%;
+
+      .body-row {
+        display: flex;
+        justify-content: space-between;
+        margin: .5rem 0;
+
+        span {
+          white-space: nowrap;          
+        }
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
