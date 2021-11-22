@@ -16,14 +16,14 @@ function App() {
       <HeroSection/> 
       <div className='cards-container container'>
         <CardHero
-          title='Empréstimo'
-          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id consectetur neque. Vivamus condimentum posuere augue, a tristique erat dapibus non. Curabitur sit amet varius sem.'
+          title='Empréstimo consignado'
+          text='O empréstimo consignado é descontado diretamente no contracheque, holerite do servidor público ou no benefício do INSS. Temos as melhores condições do mercado, faça já sua simulação sem compromisso com um de nossos atendentes.'
           targetSectionId='emprestimo'
           buttonText='Simular agora'          
         />
         <CardHero
           title='FGTS'
-          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id consectetur neque. Vivamus condimentum posuere augue.'
+          text='Chega de passar sufoco com o seu dinheiro parado, liberamos em poucas horas o seu valor aprisionado na conta do FGTS. Fale agora com um de nossos atendentes.'
           targetSectionId='fgts'
           buttonText='Simular agora'          
         />

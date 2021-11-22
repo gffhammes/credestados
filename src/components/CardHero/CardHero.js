@@ -11,8 +11,8 @@ export const CardHero = ({
   return (
     <div className="card-hero shadow-2">
       <h3>{title}</h3>
-      <p>{text}</p>      
-      <Button sectionId={targetSectionId} buttonSize='btn--medium'>{buttonText}</Button>
+      <p>{text}</p>
+      <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")}  buttonSize='btn--medium'><i class="fab fa-whatsapp"></i> {buttonText}</Button>
     </div>
   )
 };

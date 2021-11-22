@@ -9,6 +9,7 @@ export const CardEmprestimo = ({
     <a target='_blank' href="https://wa.me/554797527024">
       <div className="card-emprestimo shadow-2">
         <div className="cover" />
+        <div className="hover"/>
         <img src={process.env.PUBLIC_URL + imgPath} alt={text}/>
         <h3>{text}</h3>
       </div>

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import NumberFormat from 'react-number-format';
 import Button from '../Button/Button';
 import './Fgts.scss';
 
 function Fgts() {
+  const [saldoFgts, setSaldoFgts] = useState('');
+  const [aniversario, setAniversario] = useState({aniversario: new Date()});
+
   return (
     <section className='padding--default bg--light-grey' id='fgts'>
       <div className="container">
@@ -23,16 +27,25 @@ function Fgts() {
             <div className="card-body">
               <div className="body-row valor">
                 <span>Saldo FGTS</span>
-                <input id="saldo-fgts" type="text" placeholder='0,00'/>
+                <NumberFormat
+                  thousandSeparator={'.'}
+                  decimalSeparator={','}
+                  decimalScale={'2'}
+                  prefix={'R$ '}
+                  id="saldo-fgts"
+                  type="text"
+                  placeholder='R$ 0'
+                  onChange={event => setSaldoFgts(event.target.value)}
+                />
               </div>
 
               <div className="body-row aniversario">
                 <span>Seu aniversário</span>
-                <input type="date"/>
+                <input onChange={event => setAniversario(event.target.value)} type="date"/>
               </div>
             </div>
             
-            <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")} buttonStyle='btn--primary'><i class="fab fa-whatsapp"></i> Simular</Button>
+            <Button onClick={() => window.open(`https://wa.me/554797527024?text=${encodeURIComponent(`Olá, gostaria de uma simulação! Meu saldo é de ${saldoFgts}`)} e meu aniversário é no dia ${aniversario}.`, "_blank")} buttonStyle='btn--primary'><i class="fab fa-whatsapp"></i> Simular</Button>
           </div>
         </div>
         
