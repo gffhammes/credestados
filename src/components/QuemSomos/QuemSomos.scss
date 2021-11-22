@@ -1,13 +1,57 @@
-#quem-somos > .container {
-  width: 100%;
+#quem-somos {
 
-  img {
-    width: 100%;
-    margin-bottom: 2rem;
+  .container {
+    display: grid;
+    column-gap: 2rem;
+
+    grid-template-areas:
+    "a a"
+    "b c";
+    
+    .title-container {
+      grid-area: a;
+    }
+  
+    img {
+      grid-area: c;
+      width: 100%;
+      margin-bottom: 2rem;
+      object-fit: contain;
+    }
+  
+    .text-button {
+      grid-area: b;
+      
+      p {
+        margin-bottom: 2rem;
+      }
+    }
   }
+}
 
-  p {
-    margin-bottom: 2rem;
+@media screen and (min-width: 961px) { 
+  #quem-somos {
+    /*.content {
+      display: flex;
+
+      img {
+        flex-basis: 30%;
+        flex-shrink: 1;
+        flex-grow: 1;
+        margin: 0;
+      }  
+
+      .text-button {
+        margin-left: 3rem;
+
+        p {
+          margin-bottom: 1rem;
+        }  
+  
+        a, Button {
+          margin-top: 2rem;
+        }
+      }
+    } */   
   }
-
 }

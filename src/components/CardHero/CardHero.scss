@@ -1,0 +1,24 @@
+.card-hero {
+  width: 100%;
+  flex: 1;
+
+  z-index: 100;
+
+  border-radius: .5rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--light-grey);  
+
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  
+  a, Button {
+    margin-top: auto;
+    width: 100%;
+  }
+
+}

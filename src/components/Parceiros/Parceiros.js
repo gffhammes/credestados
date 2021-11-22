@@ -9,7 +9,7 @@ function Parceiros() {
   return (
     <section className='padding--default' id='parceiros'>
       <div className="container">
-        <SectionTitle title='Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' subTitle='PARCEIROS' alignment='align--left'/>
+        <SectionTitle title='Trabalhamos com as principais instituições financeiras do país' subTitle='PARCEIROS' alignment='align--center'/>
         <SliderParceiros/>
       </div>
     </section>

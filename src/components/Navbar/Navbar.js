@@ -27,14 +27,13 @@ function Navbar() {
     <>
       <nav className="navbar shadow-3" id='navbar'>
         <div className="navbar-container container">
-        <Link
+          <Link
             to='hero'
             className='navbar-logo'
             onClick={closeMobileMenu}
             activeClass="active"
             spy={true}
-            smooth={true}
-            offset={-50}
+            smooth={true}            
           >
             <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo" />
           </Link>
@@ -50,7 +49,6 @@ function Navbar() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
               >
                 Quem somos
               </Link>
@@ -63,7 +61,7 @@ function Navbar() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 Diferenciais
               </Link>
@@ -76,7 +74,7 @@ function Navbar() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 Empréstimo
               </Link>
@@ -89,7 +87,7 @@ function Navbar() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 FGTS
               </Link>
@@ -102,12 +100,25 @@ function Navbar() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 Parceiros
               </Link>
             </li>
-            <Button type="button" onClick="location.href='https://whatsapp.com'" buttonStyle='btn--outline'> <i className='fab fa-whatsapp'/> Fale conosco</Button>
+            <li className='nav-item'>
+              <Link
+                to='/'
+                className='nav-link'
+                onClick={closeMobileMenu}
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                
+              >
+                Colaborador
+              </Link>
+            </li>
+            <Button type="button" buttonStyle='btn--outline'> <i className='fab fa-whatsapp'/> Fale conosco</Button>
           </ul>
         </div>
       </nav>

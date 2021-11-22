@@ -25,7 +25,7 @@ export const Button = ({
       activeClass="active"
       spy={true}
       smooth={true}
-      offset={-50}
+      
     >    
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize} shadow-1`}

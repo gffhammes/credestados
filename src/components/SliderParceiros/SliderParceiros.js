@@ -6,10 +6,26 @@ export default class SliderParceiros extends Component {
     const settings = {
       dots: false,
       infinite: true,
-      speed: 500,
-      slidesToShow: 2,
+      speed: 250,
+      slidesToShow: 4,
       slidesToScroll: 1,
-      //autoplay: true,
+      autoplay: true,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 875,
+          settings: {
+              slidesToShow: 3,
+          }
+        },
+
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+  ]
     };
     return (
       <div className='slider-parceiros'>

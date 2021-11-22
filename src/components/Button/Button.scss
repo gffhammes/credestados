@@ -10,6 +10,8 @@
   cursor: pointer;
   transition: all .3s ease-out;
   width: 100%;
+  position: relative;
+  z-index: 15;
 }
 
 .btn--primary {
@@ -38,7 +40,7 @@
 
 .btn--medium {
   font-size: 1rem;  
-  padding: .5rem 1rem;
+  padding: .75rem 1rem;
   border-radius: .2rem;
 }
 
@@ -46,4 +48,10 @@
   font-size: 1.25rem;  
   padding: .75rem 1.5rem;
   border-radius: .3rem;
+}
+
+@media screen and (min-width: 961px) {
+  .btn {
+    width: fit-content;
+  }
 }

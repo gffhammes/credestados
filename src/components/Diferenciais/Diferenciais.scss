@@ -1,3 +1,26 @@
-.container {
-  width: 100%;
+#diferenciais {  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 675px) and (max-width: 1100px) {
+  #diferenciais {
+    .content {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  #diferenciais {
+    .content {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }
+
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Button from '../Button/Button';
+import CardEmprestimo from '../CardEmprestimo/CardEmprestimo';
 import './Emprestimo.scss';
 
 
@@ -8,28 +9,17 @@ function Emprestimo() {
   return (
     <section className='padding--default' id='emprestimo'>
       <div className="container">
-        <SectionTitle title='Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' subTitle='EMPRÉSTIMO' alignment='align--left'/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore tempore provident consequatur exercitationem harum et voluptatem accusantium, unde enim aliquid, odio, dolores animi id. Eum sed officia nisi mollitia doloremque?</p>
-
-        <div className="card-simulacao-emprestimo shadow-2 bg--light-grey">
-          <div className="card-header">            
-            <i class="fas fa-hand-holding-usd"></i>
-            <h3>Simular empréstimo</h3>
-          </div>
-          <div className="card-body">
-            <div className="body-row">
-              <span>Qual o valor?</span>
-              <input type="text" placeholder="R$ 0,00"/>
-            </div>
-
-            <div className="body-row">
-              <span>Quantas parcelas?</span>
-              <input type="text" placeholder="1"/>
-            </div>
-          </div>
-          
-          <Button buttonStyle='btn--primary' >Simular</Button>
+        <SectionTitle title='As melhores condições de crédito para você' subTitle='EMPRÉSTIMO' alignment='align--left'/>
+        <div className="content">
+          <CardEmprestimo imgPath='/images/emprestimo-01.jpg' text='APOSENTADOS INSS' />
+          <CardEmprestimo imgPath='/images/emprestimo-02.jpg' text='PENSIONISTAS INSS' />
+          <CardEmprestimo imgPath='/images/emprestimo-03.jpg' text='SERVIDORES PÚBLICOS' />
+          <CardEmprestimo imgPath='/images/emprestimo-04.jpg' text='FORÇAS ARMADAS' />
+          <CardEmprestimo imgPath='/images/emprestimo-05.jpg' text='CARTÃO DE CRÉDITO CONSIGNADO' />
+          <CardEmprestimo imgPath='/images/emprestimo-06.jpg' text='PORTABILIDADE DE CRÉDITO' />
         </div>
+        <img src={process.env.PUBLIC_URL + '/images/pattern-02.png'} alt="padrao" className='padrao padrao3'/>
+        <Button> <i className="fab fa-whatsapp" /> Simular agora</Button>
       </div>
     </section>
   )

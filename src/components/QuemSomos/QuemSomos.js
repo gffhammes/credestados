@@ -8,10 +8,14 @@ function QuemSomos() {
   return (
     <section className='padding--default' id='quem-somos'>
       <div className="container">
-        <SectionTitle title='Conheça a CredEstados' subTitle='QUEM SOMOS' alignment='align--left'/>
-        <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore tempore provident consequatur exercitationem harum et voluptatem accusantium, unde enim aliquid, odio, dolores animi id. Eum sed officia nisi mollitia doloremque?</p>
-        <Button>Fale conosco</Button>
+        <SectionTitle title='Crédito fácil e rápido é com a CredEstados' subTitle='QUEM SOMOS' alignment='align--center'/>
+        <img src={process.env.PUBLIC_URL + '/images/logo-completa.png'} alt="Logo" />
+        <div className="text-button">
+          <p>A Cred Estados é uma <strong>empresa sólida</strong> que se destaca no mercado financeiro por oferecer <strong>excelentes serviços e produtos de crédito consignado e pessoal</strong>, representando os principais bancos e instituições financeiras.</p>
+          <p>Nosso objetivo é oferecer para nossos clientes as <strong>melhores soluções em crédito.</strong></p>
+          <p>Estamos sempre em busca de novas tecnologias, <strong>condições diferenciadas</strong> e o principal: um <strong>atendimento de qualidade</strong> para nossos clientes</p>
+          <Button><i className='fab fa-whatsapp'/> Fale conosco</Button>
+        </div>
       </div>
     </section>
   )

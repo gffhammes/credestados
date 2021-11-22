@@ -26,7 +26,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 Quem somos
               </Link>
@@ -37,7 +37,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 Diferenciais
               </Link>
@@ -48,7 +48,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 Empréstimo
               </Link>
@@ -59,7 +59,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 FGTS
               </Link>
@@ -70,7 +70,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 Parceiros
               </Link>
@@ -87,7 +87,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 <i class="fas fa-envelope"/> 
                 <span>contato@credestados.com.br</span>
@@ -99,7 +99,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 <i class="fas fa-phone-alt"></i> 
                 <span>(47) 3268-4843</span>
@@ -111,7 +111,7 @@ function Footer() {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                
               >
                 <i class="fas fa-map-marker-alt"></i>
                 <span>
