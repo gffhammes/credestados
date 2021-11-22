@@ -118,7 +118,7 @@ function Navbar() {
                 Colaborador
               </Link>
             </li>
-            <Button type="button" buttonStyle='btn--outline'> <i className='fab fa-whatsapp'/> Fale conosco</Button>
+            <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")} type="button" buttonStyle='btn--outline'> <i className='fab fa-whatsapp'/> Fale conosco</Button>
           </ul>
         </div>
       </nav>

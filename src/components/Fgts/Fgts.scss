@@ -1,4 +1,3 @@
-
 #fgts {
   .container {
     display: grid;
@@ -46,54 +45,39 @@
   
       .card-body {
         margin: auto 0;
+        padding: 2rem 0;
+        
         width: 100%;
+        display: grid;
+        row-gap: 1.5rem;
+        grid-template-areas:
+        "a"
+        "b";
   
         .body-row {
-          display: flex;
-          justify-content: space-between;
-          margin: 1rem 0;
-  
-          span {
-            white-space: nowrap;          
-          }
+          display: grid;
+          row-gap: .5rem;
+          grid-template-areas:
+          "a"
+          "b";
   
           &.valor {
-            justify-content: flex-end;
-  
-            > span {
-              margin-right: .5rem;
-            }
-  
-            > span:first-child {
-              margin-right: auto;
-            }
-  
-            input {
-              width: 30%;
-              max-width: 250px;
-              text-align: right;
-            }
-  
+            grid-area: a;
           }
-  
+
           &.aniversario {
-            justify-content: flex-end;
-  
-            > span {
-              margin-right: .5rem;
-            }
-  
-            > span:first-child {
-              margin-right: auto;
-            }
-  
-            input {
-              width: 50%;
-              max-width: 250px;
-              text-align: right;
-              font-family: 'Open Sans', sans-serif;
-            }
-  
+            grid-area: b;
+          }
+
+          span {
+            white-space: nowrap;
+            grid-area: a;
+          }
+
+          input {
+            width: 100%;
+            text-align: left;
+            grid-area: b;
           }
         }  
       }    
@@ -102,9 +86,56 @@
         width: 100% !important;
       }
     }
-}
+  }
 }
 
+@media screen and (min-width: 400px) and (max-width: 675px) {
+  #fgts {
+    .container {
+        .card-simulacao-fgts {
+          grid-area: c;
+
+        .card-body {
+          width: 100%;
+          display: grid;
+          row-gap: 1.5rem;
+          grid-template-areas:
+          "a"
+          "b";
+
+          .body-row {
+            display: grid;
+            column-gap: .5rem;
+            align-items: center;
+            grid-template-areas:
+            "a b";
+
+            &.valor {
+              grid-area: a;
+            }
+
+            &.aniversario {
+              grid-area: b;
+            }
+
+            span {
+              white-space: nowrap;
+              grid-area: a;
+            }
+
+            input {
+              width: 100%;
+              text-align: left;
+              grid-area: b;
+            }
+          }  
+        }
+      }
+    }
+  }
+}
+
+/*
 @media screen and (min-width: 676px) {
   #fgts {
     .container {
@@ -124,23 +155,67 @@
         grid-area: c;   
         z-index: 100;   
       }
-      
-      .card-simulacao-fgts {
-        margin: 0;
-        grid-area: b;
-      }
     }
   }
-}
+}*/
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 676px) {
   #fgts {
     .container {
+      grid-template-areas: 
+      "a b"
+      "c b";
 
-      .title-container {
-        width: 70%;
+        .title-container {
+          width: 70%;
+          margin-bottom: 1rem;
+        }
+
+        .text {
+          margin: 1rem 0 0 0;
+          grid-area: c;   
+          z-index: 100;
+        }
+
+        .card-simulacao-fgts {
+          grid-area: b;
+
+          .card-body {
+            width: 100%;
+            display: grid;
+            row-gap: 1.5rem;
+            grid-template-areas:
+            "a"
+            "b";
+
+          .body-row {
+            display: grid;
+            column-gap: .5rem;
+            align-items: center;
+            grid-template-areas:
+            "a b";
+
+            &.valor {
+              grid-area: a;
+            }
+
+            &.aniversario {
+              grid-area: b;
+            }
+
+            span {
+              white-space: nowrap;
+              grid-area: a;
+            }
+
+            input {
+              width: 100%;
+              text-align: left;
+              grid-area: b;
+            }
+          }  
+        }
       }
-
     }
   }
 }

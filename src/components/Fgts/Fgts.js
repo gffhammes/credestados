@@ -3,7 +3,6 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import Button from '../Button/Button';
 import './Fgts.scss';
 
-
 function Fgts() {
   return (
     <section className='padding--default bg--light-grey' id='fgts'>
@@ -24,8 +23,7 @@ function Fgts() {
             <div className="card-body">
               <div className="body-row valor">
                 <span>Saldo FGTS</span>
-                <span>R$</span>
-                <input type="text"/>
+                <input id="saldo-fgts" type="text" placeholder='0,00'/>
               </div>
 
               <div className="body-row aniversario">
@@ -34,7 +32,7 @@ function Fgts() {
               </div>
             </div>
             
-            <Button buttonStyle='btn--primary'><i class="fab fa-whatsapp"></i> Simular</Button>
+            <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")} buttonStyle='btn--primary'><i class="fab fa-whatsapp"></i> Simular</Button>
           </div>
         </div>
         

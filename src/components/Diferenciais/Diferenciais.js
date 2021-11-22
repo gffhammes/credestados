@@ -32,7 +32,7 @@ function Diferenciais() {
             text='Com a CredEstados você recebe seu crédito em até 24h sem nem sair de casa.'
           />
         </div>
-        <Button><i className='fab fa-whatsapp'/> Fale conosco</Button>
+        <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")}><i className='fab fa-whatsapp'/> Fale conosco</Button>
       </div>
     </section>
   )

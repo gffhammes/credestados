@@ -19,7 +19,7 @@ function Emprestimo() {
           <CardEmprestimo imgPath='/images/emprestimo-06.jpg' text='PORTABILIDADE DE CRÉDITO' />
         </div>
         <img src={process.env.PUBLIC_URL + '/images/pattern-02.png'} alt="padrao" className='padrao padrao3'/>
-        <Button> <i className="fab fa-whatsapp" /> Simular agora</Button>
+        <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")}> <i className="fab fa-whatsapp" /> Simular agora</Button>
       </div>
     </section>
   )
