@@ -44,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "webpack": "^2.1.0-beta.22"
+    "gh-pages": "^3.2.3"
   }
 }
