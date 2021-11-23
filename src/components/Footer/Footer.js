@@ -104,13 +104,6 @@ function Footer() {
             </li>
           </ul>
         </div>
-
-        <div className="text">
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id consectetur neque. Vivamus condimentum posuere augue, a tristique erat dapibus non. Curabitur sit amet varius sem. Vestibulum ut efficitur mauris. Suspendisse congue, est non dignissim cursus, eros tellus lacinia quam, quis convallis mi magna ut nibh. Phasellus eu nulla vel augue aliquam faucibus ac ac arcu. Etiam cursus turpis ac laoreet venenatis. Aliquam erat volutpat. Sed tincidunt ullamcorper tristique. Praesent pharetra nec velit at sodales. Sed ex lorem, lacinia a elementum quis, ultricies nec massa. Proin volutpat, odio ut vehicula sagittis, augue nibh vulputate lacus, quis porta tortor nibh non urna. Vivamus ut cursus nisl, at porttitor augue. Maecenas eleifend vulputate nulla vel dictum. Donec tellus libero, auctor vitae justo eu, efficitur luctus tellus.
-          </p>
-        </div>
-
       </div>
     </footer>
   )

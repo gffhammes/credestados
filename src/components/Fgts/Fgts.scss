@@ -78,6 +78,16 @@
             width: 100%;
             text-align: left;
             grid-area: b;
+            outline: none;
+            border: 1px solid var(--text-color);
+
+            &:invalid &:required {
+              border: 1px solid var(--primary);
+            }
+
+            &:required {
+              border: 1px solid var(--text-color);
+            }
           }
         }  
       }    
