@@ -42,6 +42,15 @@ export default class SliderParceiros extends Component {
           <div>
             <img src={process.env.PUBLIC_URL + '/images/parceiro-04.png'} alt="Parceiro" />
           </div>
+          <div>
+            <img src={process.env.PUBLIC_URL + '/images/parceiro-05.png'} alt="Parceiro" />
+          </div>
+          <div>
+            <img src={process.env.PUBLIC_URL + '/images/parceiro-06.png'} alt="Parceiro" />
+          </div>
+          <div>
+            <img src={process.env.PUBLIC_URL + '/images/parceiro-07.png'} alt="Parceiro" />
+          </div>
         </Slider>
       </div>
     );
