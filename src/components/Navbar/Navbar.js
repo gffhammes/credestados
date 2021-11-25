@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Navbar.scss';
 import Button from '../Button/Button';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -28,12 +28,9 @@ function Navbar() {
       <nav className="navbar shadow-3" id='navbar'>
         <div className="navbar-container container">
           <Link
-            to='hero'
+            to='/'
             className='navbar-logo'
-            onClick={closeMobileMenu}
-            activeClass="active"
-            spy={true}
-            smooth={true}            
+            onClick={closeMobileMenu}       
           >
             <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo" />
           </Link>
@@ -43,27 +40,11 @@ function Navbar() {
           <ul className={click ? 'nav-menu active shadow-3' : 'nav-menu'}>
             <li className='nav-item'>
               <Link
-                to='quem-somos'
+                to='/'
                 className='nav-link'
                 onClick={closeMobileMenu}
-                activeClass="active"
-                spy={true}
-                smooth={true}
               >
-                Quem somos
-              </Link>
-            </li>
-            <li className='nav-item'>
-            <Link
-                to='diferenciais'
-                className='nav-link'
-                onClick={closeMobileMenu}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
-              >
-                Diferenciais
+                Institucional
               </Link>
             </li>
             <li className='nav-item'>
@@ -71,10 +52,6 @@ function Navbar() {
                 to='emprestimo'
                 className='nav-link'
                 onClick={closeMobileMenu}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
               >
                 Empréstimo
               </Link>
@@ -84,38 +61,8 @@ function Navbar() {
                 to='fgts'
                 className='nav-link'
                 onClick={closeMobileMenu}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
               >
                 FGTS
-              </Link>
-            </li>
-            <li className='nav-item'>
-            <Link
-                to='parceiros'
-                className='nav-link'
-                onClick={closeMobileMenu}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
-              >
-                Parceiros
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/'
-                className='nav-link'
-                onClick={closeMobileMenu}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
-              >
-                Colaborador
               </Link>
             </li>
             <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")} type="button" buttonStyle='btn--outline'> <i className='fab fa-whatsapp'/> Fale conosco</Button>

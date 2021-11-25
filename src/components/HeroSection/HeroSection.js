@@ -8,8 +8,8 @@ function HeroSection() {
     <section className="hero-container" id='hero'>
       <SliderHero />
       <div className='btn-container container'>
-        <Button sectionId='emprestimo' buttonSize='btn--large'>Empréstimo consignado</Button>
-        <Button sectionId='fgts' buttonSize='btn--large'>Saque FGTS</Button>
+        <Button pageName='emprestimo' buttonSize='btn--large'>Empréstimo</Button>
+        <Button pageName='fgts' buttonSize='btn--large'>Saque FGTS</Button>
       </div>
     </section>
   )

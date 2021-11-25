@@ -107,7 +107,7 @@
 
 @media screen and (min-width: 767px) {  
   .hero-container {
-    height: 80vh;
+    height: 50vh;
 
     h1 {
       font-size: 2.5rem;
@@ -124,8 +124,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  h1 {
+  .hero-container {
+    h1 {
     margin-left: calc((100vw - 1200px) / 2) !important;
     width: 40% !important;
+    }
   }
 }

@@ -1,13 +1,14 @@
 .navbar {
   background-color: #fff;
-  height: 100px;
+  height: var(--menu-height);
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
   z-index: 999;
-  padding: 25px 0;
+  padding: 15px 0;
+  //padding: 25px 0;
   width: 100%;
   transition: 0.2s ease-out;
 
@@ -81,10 +82,10 @@
       }
     }
 
-    .btn-mobile {
+    .btn {
       width: auto;
       white-space: nowrap;
-      margin-left: .5rem;
+      margin-left: 0;
 
       i {
         margin-right: .25rem;
@@ -93,7 +94,7 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 766px) {
    .navbar-container {
     .menu-icon {
       display: block !important;

@@ -1,0 +1,51 @@
+#emprestimo-header {
+  background: linear-gradient(#fff, #f4f4f4);
+
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: calc(100vh - var(--menu-height));
+
+    display: grid;
+    row-gap: 1rem;
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+
+    h1 {
+      height: fit-content;
+      font-size: 1.3rem;
+      align-self: center;
+      z-index: 5;
+      grid-area: a;
+
+      strong {
+        color: var(--primary);
+      }
+    }
+
+    .header-img {
+      width: 80%;
+      object-fit: contain;
+      align-self: center;
+      justify-self: center;
+      z-index: 5;
+      grid-area: b;
+    }
+
+    .btn-mobile {
+      height: fit-content;
+      align-self: flex-end;
+      grid-area: c;
+    }
+  }
+}
+
+@media screen and (min-height: 700px) {
+  #emprestimo-header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

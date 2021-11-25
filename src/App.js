@@ -1,41 +1,25 @@
 import './App.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import HeroSection from './components/HeroSection/HeroSection';
-import QuemSomos from './components/QuemSomos/QuemSomos';
-import Diferenciais from './components/Diferenciais/Diferenciais';
-import Emprestimo from './components/Emprestimo/Emprestimo';
-import Fgts from './components/Fgts/Fgts';
-import Parceiros from './components/Parceiros/Parceiros';
+import Home from './pages/Home/Home';
+import SaqueFgts from './pages/SaqueFgts/SaqueFgts';
+import EmprestimoConsignado from './pages/EmprestimoConsignado/EmprestimoConsignado';
 import Footer from './components/Footer/Footer';
-import CardHero from './components/CardHero/CardHero';
+import ScrollToTop from './components/ScrollToTop';
 
-function App() { 
+function App() {
   return (
     <>
+    <Router>
+      <ScrollToTop />
       <Navbar/>
-      <HeroSection/> 
-      <div className='cards-container container'>
-        <CardHero
-          title='Empréstimo consignado'
-          text='O empréstimo consignado é descontado diretamente no contracheque, holerite do servidor público ou no benefício do INSS. Temos as melhores condições do mercado, faça já sua simulação sem compromisso com um de nossos atendentes.'
-          targetSectionId='emprestimo'
-          buttonText='Simular agora'          
-        />
-        <CardHero
-          title='FGTS'
-          text='Chega de passar sufoco com o seu dinheiro parado, liberamos em poucas horas o seu valor aprisionado na conta do FGTS. Fale agora com um de nossos atendentes.'
-          targetSectionId='fgts'
-          buttonText='Simular agora'          
-        />
-      </div>
-      <QuemSomos/>
-      <img src={process.env.PUBLIC_URL + '/images/pattern-01.png'} alt="padrao" className='padrao padrao1'/>
-      <Diferenciais/>
-      <img src={process.env.PUBLIC_URL + '/images/pattern-02.png'} alt="padrao" className='padrao padrao2'/>
-      <Emprestimo/>
-      <Fgts/>
-      <Parceiros/>
+      <Routes>
+        <Route exact path='/' element={<Home/>} />
+        <Route exact path='fgts' element={<SaqueFgts/>} />
+        <Route exact path='emprestimo' element={<EmprestimoConsignado/>} />
+      </Routes>
       <Footer/>
+    </Router>
     </>
   );
 }

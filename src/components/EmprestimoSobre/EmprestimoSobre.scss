@@ -1,0 +1,20 @@
+#emprestimo-sobre {
+  .container {
+    display: grid;
+    row-gap: 4rem;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+
+    .title-container {
+      grid-area: a;
+    }
+
+    .img-content {
+      grid-area: b;
+      width: 100%;
+    }
+  }
+}

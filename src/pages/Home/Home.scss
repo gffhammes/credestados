@@ -1,0 +1,27 @@
+.page__home {
+  .padrao {
+    &.padrao1 {
+      right: 0;
+      width: 60%;
+      transform: translateY(150%);
+    }
+
+    &.padrao2 {
+      display: none;
+    }
+    
+    &.padrao3 {
+      left: 0;
+      width: 60%;
+      z-index: 0;
+      transform: translateY(-40%);
+    } 
+    
+    &.padrao4 {
+      right: 0;
+      width: 60%;
+      z-index: 0;
+      transform: translateY(-40%);
+    }
+  }
+}

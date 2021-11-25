@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import './Button.scss';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--green'];
@@ -10,22 +10,19 @@ export const Button = ({
   children,
   type,
   onClick,
-  sectionId,
+  pageName,
   buttonStyle,
   buttonSize
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-  const checkSectionId = sectionId ? sectionId : "/"
+  const checkPageName = pageName ? pageName : ""
 
   return (
     <Link
-      to={checkSectionId}
+      to={checkPageName}
       className='btn-mobile'
-      activeClass="active"
-      spy={true}
-      smooth={true}
-      
+      activeClass="active"      
     >    
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize} shadow-1`}
