@@ -1,4 +1,6 @@
 #emprestimo-categorias {
+  padding-top: 150px;
+
   .container {
     display: grid;
     row-gap: 4rem;
@@ -30,15 +32,16 @@
 }
 
 @media screen and (min-width: 675px) and (max-width: 960px) {
-  #emprestimo { 
+  #emprestimo-categorias { 
     .content { 
       grid-template-columns: repeat(2, 1fr) !important;
     } 
   }
 }
 
-@media screen and (min-width: 675px)  {
-  #emprestimo { 
+@media screen and (min-width: 675px) and (max-width: 959px)  {
+  #emprestimo-categorias { 
+    padding-top: 200px;
     .content { 
       .card-emprestimo {
         height: 8rem;
@@ -48,8 +51,9 @@
 }
 
 
-@media screen and (min-width: 961px) {
-  #emprestimo { 
+@media screen and (min-width: 960px) {
+  #emprestimo-categorias { 
+    padding-top: 100px;
     .content { 
       grid-template-columns: repeat(3, 1fr) !important;
     } 

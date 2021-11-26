@@ -17,15 +17,15 @@ function Navbar() {
     navElement = document.getElementById("navbar");
 
     if (distanceY > shrinkOn) {
-      navElement.classList.add("shrink");
+      navElement.classList.add("shadow-3");
     } else {
-      navElement.classList.remove("shrink");
+      navElement.classList.remove("shadow-3");
     }
   };
 
   return (
     <>
-      <nav className="navbar shadow-3" id='navbar'>
+      <nav className="navbar" id='navbar'>
         <div className="navbar-container container">
           <Link
             to='/'
@@ -44,7 +44,7 @@ function Navbar() {
                 className='nav-link'
                 onClick={closeMobileMenu}
               >
-                Institucional
+                Home
               </Link>
             </li>
             <li className='nav-item'>

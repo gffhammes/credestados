@@ -1,11 +1,18 @@
 import './SaqueFgts.scss';
-import Fgts from '../../components/Fgts/Fgts';
+import FgtsHeader from '../../components/FgtsHeader/FgtsHeader';
+import FgtsSimulador from '../../components/FgtsSimulador/FgtsSimulador';
+import FgtsCondicoes from '../../components/FgtsCondicoes/FgtsCondicoes';
+import FgtsVantagens from '../../components/FgtsVantagens/FgtsVantagens';
+
 
 function SaqueFgts() { 
   return (
-    <>
-      <Fgts/>
-    </>
+    <main id='page__fgts'>
+      <FgtsHeader />
+      <FgtsSimulador />
+      <FgtsCondicoes />
+      <FgtsVantagens />
+    </main>
   );
 }
 

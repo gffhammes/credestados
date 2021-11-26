@@ -9,7 +9,7 @@ function EmprestimoCategorias() {
   return (
     <section className='padding--default' id='emprestimo-categorias'>
       <div className="container">
-        <SectionTitle title='As melhores condições de crédito para você' subTitle='CATEGORIAS' alignment='align--left'/>
+        <SectionTitle title='Temos a solução certa para você' subTitle='CATEGORIAS' alignment='align--left'/>
         <div className="content">
           <CardEmprestimo imgPath='/images/emprestimo-01.jpg' text='APOSENTADOS INSS' />
           <CardEmprestimo imgPath='/images/emprestimo-02.jpg' text='PENSIONISTAS INSS' />

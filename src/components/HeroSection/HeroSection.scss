@@ -1,133 +1,110 @@
 .hero-container {
-  height: 100vh;
+  height: calc(100vh - var(--menu-height));
   width: 100%;
   position: relative;
 
-  .btn-container {
-    display: flex;
-    flex-direction: column;
-    
-    height: fit-content;
-    width: 100%;
-
-    margin: 0;
-    padding: 40px 40px 80px 40px;
-
-    position: absolute;
-    top: 100vh;
-    transform: translateY(-100%);
-
-    a {
-      margin-top: auto;
-    }
-
-    a:last-child {
-      margin-bottom: 0;
-      margin-top: 1rem;
-    }
-
-  }
+  .slider-hero {
+    height: 100%;
   
-  .cards-container {
-    display: none;
-  }
-}
-
-.slider-hero {
-  height: 100%;
-
-  .slick-slider {
-    height: 100%;
-
-    .slick-list {      
+    .slick-slider {
       height: 100%;
-    }
-
-  }
-
-  .slick-track {
-    height: 100%;
-
-    .slick-slide {
-      height: 100%;
-
-      > div {
-        position: relative;
+  
+      .slick-list {      
         height: 100%;
-
+      }
+  
+    }
+  
+    .slick-track {
+      height: 100%;
+  
+      .slick-slide {
+        height: 100%;
+  
         > div {
+          position: relative;
           height: 100%;
+  
+          > div {
+            height: 100%;
+          }
+        }
+  
+        .content {
+          height: 100%;
+          padding: 2rem;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+          z-index: 100;
+
+          display: grid;
+          grid-template-rows: auto min-content;
+          
+          h1 {
+            color: #fff;
+            align-self: center;
+          }
+        }
+  
+        .cover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 50;
+      
+          background: linear-gradient(110deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0,.05));
+        }
+  
+        .image-2 {
+          object-position: right;
+        }
+  
+        .image-3 {
+          object-position: 40%;
         }
       }
-
-      h1 {
-        position: absolute;
-        width: 100%;
-        z-index: 100;
-        color: #fff;
-        margin-top: 40vh;
-        transform: translateY(-50%)
-      }
-
-      .cover {
-        position: absolute;
+  
+      img {
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 50;
-    
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0,.05));
+        object-fit: cover;
       }
-
-      .image-2 {
-        object-position: right;
-      }
-
-      .image-3 {
-        object-position: 40%;
-      }
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1499px) {  
-  .hero-container {
-    h1 {
-      width: 70% !important;
-    }
-  }
-}
 
-@media screen and (min-width: 767px) {  
-  .hero-container {
-    height: 50vh;
 
-    h1 {
-      font-size: 2.5rem;
-      margin-top: 25vh !important;
-      transform: none!important;
-    }
-
-    .btn-container {
-      display: none;
-    }
-
-    
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-container {
-    h1 {
-    margin-left: calc((100vw - 1200px) / 2) !important;
-    width: 40% !important;
+@media screen and (min-width: 768px) {  
+  .hero-container {  
+    .slider-hero {    
+      .slick-track {
+        .slick-slide {    
+          .content {
+            height: 100%;
+            padding: 2rem;
+            position: absolute;
+            z-index: 100;
+  
+            display: grid;
+            row-gap: 2rem;
+            grid-template-rows: auto auto;
+            
+            h1 {
+              width: 70%;
+              font-size: 3rem;
+              color: #fff;
+              align-self: flex-end;
+            }
+          }    
+        }    
+      }
     }
   }
 }

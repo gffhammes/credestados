@@ -4,4 +4,10 @@
   border: 1px solid var(--text-color);
   border-radius: 3rem;
   padding: .5rem 1rem;
+  transition: all 300ms;
+
+  &:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+  }
 }

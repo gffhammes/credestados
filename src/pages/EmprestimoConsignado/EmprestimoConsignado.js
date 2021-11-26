@@ -8,10 +8,8 @@ import EmprestimoOpcoes from '../../components/EmprestimoOpcoes/EmprestimoOpcoes
 function EmprestimoConsignado() { 
   return (
     <main className='page__emprestimo'>
-      <img src={process.env.PUBLIC_URL + '/images/pattern-01.png'} alt="padrao" className='padrao padrao1'/>
       <EmprestimoHeader />
-      <EmprestimoSobre />
-      <img src={process.env.PUBLIC_URL + '/images/pattern-02.png'} alt="padrao" className='padrao padrao3'/>     
+      <EmprestimoSobre />   
       <EmprestimoCategorias />
       <EmprestimoOpcoes />
     </main>

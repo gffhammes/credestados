@@ -1,0 +1,48 @@
+#fgts-vantagens {
+  .container {
+    display: grid;
+    row-gap: 4rem;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+
+    .title-container {
+      grid-area: a;
+      width: 100%;
+    }
+
+    .container--vantagens {
+      grid-area: b;
+      display: grid;
+      row-gap: 2.5rem;
+
+    }
+    
+    .btn-mobile {
+      grid-area: c;
+    }
+  }
+}
+
+@media screen and (min-width: 676px) {
+  #fgts-vantagens {
+    .container {  
+      .container--vantagens {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.5rem;
+        row-gap: 3.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #fgts-vantagens {
+    .container {  
+      .container--vantagens {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}

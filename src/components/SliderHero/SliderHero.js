@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Button from '../Button/Button';
 
 export default class SliderHero extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class SliderHero extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
       arrows: false,
     };
@@ -17,17 +18,26 @@ export default class SliderHero extends Component {
       <div className='slider-hero'>
         <Slider {...settings}>
           <div>
-            <h1 className='container h1-1'>Antecipe o seu FGTS e use seu dinheiro em poucas horas</h1>
+            <div className="container content">
+              <h1>Antecipe o seu FGTS e use seu dinheiro em poucas horas</h1>
+              <Button pageName='fgts' buttonSize='btn--large'>Saiba mais</Button>
+            </div>
             <div className="cover"></div>
             <img src={process.env.PUBLIC_URL + '/images/hero-01.jpg'} alt="Slide" class='image-1' />
           </div>
           <div>
-            <h1 className='container h1-2'>Portabilidade: reduza sua parcela com taxas a partir de 1,15% a.m</h1>
+            <div className="container content">
+              <h1>Portabilidade: reduza sua parcela com taxas a partir de 1,15% a.m</h1>
+              <Button buttonSize='btn--large'>Saiba mais</Button>
+            </div>
             <div className="cover"></div>
             <img src={process.env.PUBLIC_URL + '/images/hero-02.jpg'} alt="Slide" class='image-2' />
           </div>
           <div>
-            <h1 className='container h1-3'>Empréstimos consignados com as melhores taxas do mercado</h1>
+            <div className="container content">
+              <h1>Empréstimos consignados com as melhores taxas do mercado</h1>
+              <Button pageName='emprestimo' buttonSize='btn--large'>Saiba mais</Button>
+            </div>
             <div className="cover"></div>
             <img src={process.env.PUBLIC_URL + '/images/hero-03.jpg'} alt="Slide" class='image-3' />
           </div>

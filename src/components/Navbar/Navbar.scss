@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
   height: var(--menu-height);
   display: flex;
   justify-content: space-around;
@@ -15,6 +15,7 @@
   &.shrink {
     height: 60px;
     padding: 10px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
     .btn {
       padding: 0.5rem 1rem;
@@ -85,7 +86,7 @@
     .btn {
       width: auto;
       white-space: nowrap;
-      margin-left: 0;
+      margin-left: 1rem;
 
       i {
         margin-right: .25rem;
@@ -95,7 +96,11 @@
 }
 
 @media screen and (max-width: 766px) {
-   .navbar-container {
+  :root {    
+    --menu-height: 60px;
+  }
+
+  .navbar-container {
     .menu-icon {
       display: block !important;
       font-size: 1.5rem;
@@ -138,6 +143,10 @@
           }
         }
       }
+    }
+    
+    .btn {
+      margin-left: 0 !important;
     }
   }
 

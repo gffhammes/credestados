@@ -1,11 +1,9 @@
 .page__emprestimo {
-  padding-top: var(--menu-height);
-  
   .padrao {
     &.padrao1 {
       right: 0;
       width: 60%;
-      transform: translateY(150%);
+      transform: translateY(270%);
     }
 
     &.padrao2 {
@@ -26,5 +24,4 @@
       transform: translateY(-40%);
     }
   }
-
 }

@@ -1,0 +1,37 @@
+#fgts-condicoes {
+  .container {
+    display: grid;
+    row-gap: 4rem;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+
+    .title-container {
+      grid-area: a;
+      width: 100%;
+    }
+
+    .container--condicoes {
+      grid-area: b;
+      display: grid;
+      row-gap: 2.5rem;
+
+    }
+    
+    .btn-mobile {
+      grid-area: c;
+    }
+  }
+}
+
+@media screen and (min-width: 675px) {
+  #fgts-condicoes {
+    .container {  
+      .container--condicoes {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.5rem;
+      }
+    }
+  }
+}

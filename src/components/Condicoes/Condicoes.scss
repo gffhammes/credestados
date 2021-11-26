@@ -1,0 +1,10 @@
+.container--condicao {
+  display: flex;
+  align-items: flex-start;
+  
+  i {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin: 0 1rem 0 0;
+  }
+}

@@ -24,6 +24,14 @@ body {
   color: var(--text-color);
 }
 
+main {
+  padding-top: var(--menu-height);
+  
+  section:last-child {
+    padding-bottom: calc(100px + var(--menu-height));
+  }
+}
+
 input,
 textarea,
 button,

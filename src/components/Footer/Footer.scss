@@ -1,4 +1,30 @@
 footer {
+  #whatsapp-icon {
+    background-color: var(--green);
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    transition: all .5s ease;
+    transform: translateY(200%);
+
+    i {
+      transform: translateY(-2.5%);
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    &.display {
+      transform: none;
+    }
+  }
+
   .container {
     padding-top: 100px;
     padding-bottom: 100px;

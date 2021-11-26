@@ -1,20 +1,71 @@
 #emprestimo-sobre {
+  padding-bottom: 0;
+
+  display: grid;
+  row-gap: 4rem;
+  grid-template-areas:
+  "a"
+  "b";
+
   .container {
+    height: fit-content;
+
+    grid-area: a;
+
     display: grid;
     row-gap: 4rem;
     grid-template-areas:
     "a"
     "b"
-    "c"
-    "d";
+    "c";
 
     .title-container {
       grid-area: a;
     }
 
-    .img-content {
+    .text-content {
       grid-area: b;
+    }
+
+    .btn-mobile {
+      grid-area: c;
+    }
+  }
+
+  .img-content {
+    grid-area: b;
+    width: 90%;
+    transform: translateY(15%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #emprestimo-sobre {
+    row-gap: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #emprestimo-sobre {
+    padding-bottom: 100px;
+
+    grid-template-areas:
+    "b a";
+    row-gap: 0;
+    column-gap: 3rem;
+
+    .container {
+      align-self: center;
+      row-gap: 2rem;
+      padding-right: 20%;
+    }
+
+    .img-content {
+      height: auto;
       width: 100%;
+      object-fit: contain;
+      justify-self: flex-start;
+      transform: none;
     }
   }
 }
