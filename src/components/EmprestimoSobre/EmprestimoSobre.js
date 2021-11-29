@@ -40,7 +40,7 @@ function EmprestimoSobre() {
         <p className='text-content'>
           O empréstimo consignado é uma modalidade de crédito destinada a aposentados, pensionistas e servidores públicos. <br/><br/>No consignado, o valor das parcelas de seu empréstimo é descontado automaticamente de sua folha de pagamento ou benefício do INSS.
         </p>
-        <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")}> <i className="fab fa-whatsapp" /> Simular</Button>
+        <Button onClick={() => window.open(`https://wa.me/554791515234?text=${encodeURI("Olá, gostaria de uma simulação de empréstimo!")}`, "_blank")}> <i className="fab fa-whatsapp" /> Simular</Button>
       </div>
       <img className='img-content' src={process.env.PUBLIC_URL + ((useCurrentWidth() >= 960) ? '/images/emprestimo-sobre-large.png' : '/images/emprestimo-sobre.png')} alt="Empréstimo consignado" />
     </section>

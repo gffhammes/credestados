@@ -66,7 +66,7 @@
         height: auto;
 
         .nav-link {
-          color: var(--text-color);
+          color: var(--grey);
           display: flex;
           align-items: center;
           text-decoration: none;
@@ -76,9 +76,14 @@
           white-space: nowrap;
           cursor: pointer;
 
-          &:hover {
+          &.active {
             color: var(--primary);
           }
+
+          &:hover {
+            color: var(--text-color);
+          }
+
         }
       }
     }
@@ -95,7 +100,7 @@
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 959px) {
   :root {    
     --menu-height: 60px;
   }

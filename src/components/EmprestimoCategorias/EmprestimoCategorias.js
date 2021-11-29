@@ -18,7 +18,7 @@ function EmprestimoCategorias() {
           <CardEmprestimo imgPath='/images/emprestimo-05.jpg' text='CARTÃO DE CRÉDITO CONSIGNADO' />
           <CardEmprestimo imgPath='/images/emprestimo-06.jpg' text='PORTABILIDADE DE CRÉDITO' />
         </div>
-        <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")}> <i className="fab fa-whatsapp" /> Simular</Button>
+        <Button onClick={() => window.open("https://wa.me/554791515234", "_blank")}> <i className="fab fa-whatsapp" /> Simular</Button>
       </div>   
     </section>
   )

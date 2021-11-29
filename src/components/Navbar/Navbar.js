@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Navbar.scss';
 import Button from '../Button/Button';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -39,33 +39,46 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active shadow-3' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link
+              <NavLink
+                activeClassName='active'
                 to='/'
                 className='nav-link'
                 onClick={closeMobileMenu}
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-item'>
-            <Link
+            <NavLink
+                activeClassName='active'
                 to='emprestimo'
                 className='nav-link'
                 onClick={closeMobileMenu}
               >
                 Empréstimo
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-item'>
-            <Link
+            <NavLink
+                activeClassName='active'
                 to='fgts'
                 className='nav-link'
                 onClick={closeMobileMenu}
               >
                 FGTS
-              </Link>
+              </NavLink>
             </li>
-            <Button onClick={() => window.open("https://wa.me/554797527024", "_blank")} type="button" buttonStyle='btn--outline'> <i className='fab fa-whatsapp'/> Fale conosco</Button>
+            <li className='nav-item'>
+              <a target='_blank' href="/" className="nav-link">
+                Trabalhe conosco
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a target='_blank' href="https://credestados.stormfin.com.br/" className="nav-link">
+                Colaborador
+              </a>
+            </li>
+            <Button onClick={() => window.open("https://wa.me/554791515234", "_blank")} type="button" buttonStyle='btn--outline'> <i className='fab fa-whatsapp'/> Fale conosco</Button>
           </ul>
         </div>
       </nav>

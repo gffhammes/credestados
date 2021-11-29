@@ -24,7 +24,7 @@ function FgtsSimulador() {
 
 Meu saldo é de ${saldoFgts} e meu aniversário é no dia ${formatDate(aniversario)}.`);
 
-      window.open(`https://wa.me/554797527024?text=${text}`, "_blank");
+      window.open(`https://wa.me/554791515234?text=${text}`, "_blank");
     } else {
       applicationForm.reportValidity();
     }

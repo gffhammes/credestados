@@ -36,7 +36,7 @@ function FgtsVantagens() {
           />
 
         </div>
-        <Button><i class="fab fa-whatsapp"/> Fale conosco</Button>
+        <Button onClick={() => window.open(`https://wa.me/554791515234?text=${encodeURI("Olá, gostaria de uma simulação de saque-aniversário do FGTS!")}`, "_blank")}><i class="fab fa-whatsapp"/> Fale conosco</Button>
       </div>
       <div className="container--img">
       </div>

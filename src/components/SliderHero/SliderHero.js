@@ -10,7 +10,7 @@ export default class SliderHero extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 5000,
       arrows: false,
     };
@@ -28,7 +28,7 @@ export default class SliderHero extends Component {
           <div>
             <div className="container content">
               <h1>Portabilidade: reduza sua parcela com taxas a partir de 1,15% a.m</h1>
-              <Button buttonSize='btn--large'>Saiba mais</Button>
+              <Button onClick={() => window.open(`https://wa.me/554791515234?text=${encodeURI("Olá! Gostaria de mais informações sobre portabilidade de crédito!")}`, "_blank")} buttonSize='btn--large'>Saiba mais</Button>
             </div>
             <div className="cover"></div>
             <img src={process.env.PUBLIC_URL + '/images/hero-02.jpg'} alt="Slide" class='image-2' />

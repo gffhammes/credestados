@@ -17,6 +17,7 @@ function App() {
         <Route exact path='/' element={<Home/>} />
         <Route exact path='fgts' element={<SaqueFgts/>} />
         <Route exact path='emprestimo' element={<EmprestimoConsignado/>} />
+        <Route exact path='/*' element={<Home/>} />
       </Routes>
       <Footer/>
     </Router>

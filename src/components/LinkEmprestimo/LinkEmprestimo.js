@@ -8,7 +8,7 @@ export const LinkEmprestimo = ({
   function formatLink() {
     const rawText = `Olá! Gostaria de uma simulação de empréstimo para ${text}!`;    
     const formatedText = encodeURIComponent(rawText);
-    return `https://wa.me/554797527024?text=${formatedText}`;
+    return `https://wa.me/554791515234?text=${formatedText}`;
   }
 
   return (

@@ -1,4 +1,6 @@
 footer {
+  border-top: 1px solid var(--grey);
+
   #whatsapp-icon {
     background-color: var(--green);
     position: fixed;
@@ -13,6 +15,7 @@ footer {
     z-index: 998;
     transition: all .5s ease;
     transform: translateY(200%);
+    text-decoration: none;
 
     i {
       transform: translateY(-2.5%);
