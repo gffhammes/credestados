@@ -1,4 +1,21 @@
-import React, { Component } from "react";
+import React, { useState } from 'react';
+import './SliderHero.scss'
+
+/** 
+* @function SliderHero
+*/
+
+const SliderHero = () => {
+  return <div className='slider-container'>
+    hello
+  </div>
+}
+
+export default SliderHero
+
+
+
+/*import React, { Component } from "react";
 import Slider from "react-slick";
 import Button from '../Button/Button';
 
@@ -19,7 +36,7 @@ export default class SliderHero extends Component {
         <Slider {...settings}>
           <div>
             <div className="container content">
-              <h1>Antecipe o seu FGTS e use seu dinheiro em poucas horas</h1>
+              <h1>Antecipe o seu FGTS e receba seu dinheiro em poucas horas</h1>
               <Button pageName='fgts' buttonSize='btn--large'>Saiba mais</Button>
             </div>
             <div className="cover"></div>
@@ -45,4 +62,4 @@ export default class SliderHero extends Component {
       </div>
     );
   }
-}
+}*/

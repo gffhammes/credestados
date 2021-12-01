@@ -9,8 +9,18 @@ function EmprestimoConsignado() {
   return (
     <main className='page__emprestimo'>
       <EmprestimoHeader />
-      <EmprestimoSobre />   
+      <EmprestimoSobre />
+      <img
+        src={process.env.PUBLIC_URL + '/images/pattern-01.png'}
+        className='padrao padrao-01'
+        alt="CredEstados"
+      />
       <EmprestimoCategorias />
+      <img
+        src={process.env.PUBLIC_URL + '/images/pattern-02.png'}
+        className='padrao padrao-02'
+        alt="CredEstados"
+      />
       <EmprestimoOpcoes />
     </main>
   );

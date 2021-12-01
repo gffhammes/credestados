@@ -1,27 +1,45 @@
 .page__emprestimo {
+  .container {
+    position: relative;
+    z-index: 50;
+  }
+
   .padrao {
-    &.padrao1 {
+    position: absolute;
+    z-index: 40;
+
+    &.padrao-01 {
       right: 0;
       width: 60%;
-      transform: translateY(270%);
+      max-width: 20rem;
+      transform: translateY(200%);
     }
 
-    &.padrao2 {
-      display: none;
-    }
-    
-    &.padrao3 {
+    &.padrao-02 {
       left: 0;
-      width: 60%;
-      z-index: 0;
-      transform: translateY(-40%);
-    } 
-    
-    &.padrao4 {
-      right: 0;
-      width: 60%;
-      z-index: 0;
-      transform: translateY(-40%);
+      width: 40%;
+      max-width: 15rem;
+      transform: translateY(100%);
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .page__emprestimo {  
+    .padrao {
+      &.padrao-02 {
+        transform: translateY(-15%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .page__emprestimo {  
+    .padrao {  
+      &.padrao-01 {
+        transform: translateY(100%);
+      }
     }
   }
 }

@@ -30,9 +30,9 @@ function FgtsVantagens() {
           />
 
           <IconText
-            iconPath='/images/icone-04.png'
-            title='Lorem ipsum'
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            iconPath='/images/icone-06.png'
+            title='Sem consulta ao Serasa'
+            text='Não consultamos o SPC/Serasa para liberar crédito (exceto crédito pessoal).'
           />
 
         </div>

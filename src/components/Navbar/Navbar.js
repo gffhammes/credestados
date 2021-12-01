@@ -9,9 +9,9 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  window.addEventListener("scroll", resizeNavOnScroll);
+  window.addEventListener("scroll", showMenuShadowOnScroll);
 
-  function resizeNavOnScroll() {
+  function showMenuShadowOnScroll() { 
     const distanceY = window.pageYOffset || document.documentElement.scrollTop,
     shrinkOn = 50,
     navElement = document.getElementById("navbar");
@@ -69,7 +69,7 @@ function Navbar() {
               </NavLink>
             </li>
             <li className='nav-item'>
-              <a target='_blank' href="/" className="nav-link">
+              <a target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScBeveHxeglbvr38am6FIliXA5IYSQ2Kp4JlXzr6AdWBFrYHw/viewform" className="nav-link">
                 Trabalhe conosco
               </a>
             </li>

@@ -38,40 +38,22 @@ function Footer() {
           <h3>Navegar</h3>
           <ul>
             <li>
-              <Link
-                to='/'
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
-              >
+              <Link to='/'>
                 Home
               </Link>
             </li>
             <li>
-              <Link
-                to='emprestimo'
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
-              >
+              <Link to='emprestimo'>
                 Empréstimo
               </Link>
             </li>
             <li>
-              <Link
-                to='fgts'
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                
-              >
+              <Link to='fgts'>
                 FGTS
               </Link>
             </li>
             <li>
-              <a target='_blank' href="/">
+              <a target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScBeveHxeglbvr38am6FIliXA5IYSQ2Kp4JlXzr6AdWBFrYHw/viewform">
                 Trabalhe conosco
               </a>
             </li>

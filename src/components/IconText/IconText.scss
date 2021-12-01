@@ -1,13 +1,10 @@
-.icon-text { 
-  display: flex;
-  flex-direction: column;
-
+.icon-text {
+  
   img {
     height: 3rem;
     object-fit: contain;
     margin-bottom: 1rem;
-    text-align: left;
-    width: fit-content;
+    width: auto;
   }
 
   h3 {

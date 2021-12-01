@@ -8,12 +8,10 @@ function FgtsSimulador() {
   const [saldoFgts, setSaldoFgts] = useState('');
   const [aniversario, setAniversario] = useState('');
 
-  function formatDate(dateStr){
-    var date = new Date(dateStr),
-        day  = (date.getDate()+1).toString().padStart(2, '0'),
-        month  = (date.getMonth()+1).toString().padStart(2, '0'),
-        year  = date.getFullYear();
-    return day+"/"+month+"/"+year;
+  function formatDate(year, month, day){
+    var date = new Date(year, month - 1, day)
+
+    return date.toLocaleDateString()
   } 
 
   const handleFormClick = () => {
@@ -22,7 +20,7 @@ function FgtsSimulador() {
     if (applicationForm.checkValidity()) {
       const text = encodeURIComponent(`Olá, gostaria de uma simulação para antecipação do FGTS!
 
-Meu saldo é de ${saldoFgts} e meu aniversário é no dia ${formatDate(aniversario)}.`);
+Meu saldo é de ${saldoFgts} e meu aniversário é no dia ${formatDate(aniversario.substr(0, 4), aniversario.substr(5, 2), aniversario.substr(8, 2))}.`);
 
       window.open(`https://wa.me/554791515234?text=${text}`, "_blank");
     } else {

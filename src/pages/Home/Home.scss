@@ -1,27 +1,18 @@
 .page__home {
-  .padrao {
-    &.padrao1 {
-      right: 0;
-      width: 60%;
-      transform: translateY(150%);
-    }
+  .container {
+    position: relative;
+    z-index: 50;
+  }
 
-    &.padrao2 {
-      display: none;
-    }
-    
-    &.padrao3 {
-      left: 0;
-      width: 60%;
-      z-index: 0;
-      transform: translateY(-40%);
-    } 
-    
-    &.padrao4 {
+  .padrao {
+    position: absolute;
+    z-index: 40;
+
+    &.padrao-01 {
       right: 0;
-      width: 60%;
-      z-index: 0;
-      transform: translateY(-40%);
+      width: 40%;
+      max-width: 15rem;
+      transform: translateY(-85%);
     }
   }
 }

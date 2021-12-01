@@ -9,14 +9,12 @@
 
     .title-container {
       grid-area: a;
-      width: 100%;
     }
 
     .container--vantagens {
       grid-area: b;
       display: grid;
-      row-gap: 2.5rem;
-
+      row-gap: 4rem;
     }
     
     .btn-mobile {
@@ -30,14 +28,14 @@
     .container {  
       .container--vantagens {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2.5rem;
-        row-gap: 3.5rem;
+        column-gap: 3rem;
+        row-gap: 4rem;
       }
     }
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1101px) {
   #fgts-vantagens {
     .container {  
       .container--vantagens {
