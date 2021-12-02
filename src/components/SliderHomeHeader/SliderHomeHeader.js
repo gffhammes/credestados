@@ -1,17 +1,73 @@
 import React, { useState } from 'react';
-import './SliderHero.scss'
+import './SliderHomeHeader.scss';
+import SliderContent from './SliderContent';
+import Arrow from './Arrow';
 
 /** 
-* @function SliderHero
+* @function SliderHomeHeader
 */
 
-const SliderHero = () => {
+const SliderHomeHeader = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);  
+
+  const [state, setState] = useState({
+    activeIndex: 0,
+    translate: 0,
+    transition: 0.45,
+  });
+
+  const { translate, transition, activeIndex } = state;
+
+  const nextSlide = () => {
+    if (activeIndex === 2) {
+      setState({
+        ...state,
+        translate: 0,
+        activeIndex: 0,
+      });
+    } else {
+      setState({
+        ...state,
+        translate: (activeIndex + 1) * windowWidth,
+        activeIndex: activeIndex + 1,
+      })
+    }
+  }
+
+  const prevSlide = () => {
+    if (activeIndex === 0) {
+      setState({
+        ...state,
+        translate: 2 * windowWidth,
+        activeIndex: 2,
+      });
+    } else {
+      setState({
+        ...state,
+        translate: (activeIndex - 1) * windowWidth,
+        activeIndex: activeIndex - 1,
+      })
+    }
+  }
+
+  function handleResize() {
+    setWindowWidth(window.innerWidth)
+  }
+
+  window.addEventListener('resize', handleResize)
+
   return <div className='slider-container'>
-    hello
+    <Arrow direction='left' handleClick={prevSlide}/>
+    <SliderContent
+      translate={translate}
+      transition={transition}
+      width={(windowWidth * 3)}
+    />
+    <Arrow direction='right' handleClick={nextSlide}/>
   </div>
 }
 
-export default SliderHero
+export default SliderHomeHeader
 
 
 

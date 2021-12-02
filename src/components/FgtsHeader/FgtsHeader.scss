@@ -1,12 +1,10 @@
 #fgts-header {
-  height: 100%;
   overflow: hidden;
-  position: relative;
 
   .container {
     padding-top: 2rem;
     padding-bottom: 5rem;
-    height: 100%;
+    height: calc(100vh - var(--menu-height));
 
     display: grid;
     row-gap: 1rem;
@@ -56,12 +54,11 @@
 
 @media screen and (min-width: 768px) {
   #fgts-header {
-    height: 100%;
-
     .container {
       padding-top: 4rem; 
 
-      //height: fit-content;
+      height: fit-content;
+      min-height: calc(100vh - var(--menu-height));
       height: 100%;
 
       row-gap: 4rem;

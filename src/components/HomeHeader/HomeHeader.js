@@ -1,11 +1,11 @@
 import React from 'react';
 import './HomeHeader.scss';
-import SliderHero from '../SliderHero/SliderHero';
+import SliderHomeHeader from '../SliderHomeHeader/SliderHomeHeader';
 
 function HomeHeader() {
   return (
     <section className="home-header">
-      <SliderHero />
+      <SliderHomeHeader />
     </section>
   )
 }
